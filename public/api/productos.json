@@ -1,0 +1,83 @@
+[
+  {
+    "id": "FR001",
+    "nombre": "Manzanas Fuji",
+    "categoria": "Frutas Frescas",
+    "precio": 1200,
+    "stock": "150 kilos",
+    "imagen": "https://images.unsplash.com/photo-1567306226416-28f0efdc88ce",
+    "descripcion": "Manzanas Fuji crujientes y dulces, cultivadas en el Valle del Maule. Perfectas para meriendas saludables o como ingrediente en postres. Conocidas por su textura firme y su sabor equilibrado entre dulce y ácido."
+  },
+  {
+    "id": "FR002",
+    "nombre": "Naranjas Valencia",
+    "categoria": "Frutas Frescas",
+    "precio": 1000,
+    "stock": "200 kilos",
+    "imagen": "https://tse2.mm.bing.net/th/id/OIP.B_VI88q4FYIniFSwBomn3AHaFj?rs=1&pid=ImgDetMain&o=7&rm=3",
+    "descripcion": "Jugosas y ricas en vitamina C, ideales para zumos frescos y refrescantes. Cultivadas en condiciones climáticas óptimas que aseguran su dulzura y jugosidad."
+  },
+  {
+    "id": "FR003",
+    "nombre": "Plátanos Cavendish",
+    "categoria": "Frutas Frescas",
+    "precio": 800,
+    "stock": "250 kilos",
+    "imagen": "https://tse2.mm.bing.net/th/id/OIP.yXR7XJsZdn96a_-L2hSRvwHaHa?rs=1&pid=ImgDetMain&o=7&rm=3",
+    "descripcion": "Plátanos maduros y dulces, perfectos para el desayuno o como snack energético. Ricos en potasio y vitaminas."
+  },
+  {
+    "id": "VR001",
+    "nombre": "Zanahorias Orgánicas",
+    "categoria": "Verduras Orgánicas",
+    "precio": 900,
+    "stock": "100 kilos",
+    "imagen": "https://tse4.mm.bing.net/th/id/OIP.Bdp0ZdHtxz6rgQUQlmK8lQHaG4?rs=1&pid=ImgDetMain&o=7&rm=3",
+    "descripcion": "Zanahorias crujientes cultivadas sin pesticidas en la Región de O'Higgins. Excelente fuente de vitamina A y fibra."
+  },
+  {
+    "id": "VR002",
+    "nombre": "Espinacas Frescas",
+    "categoria": "Verduras Orgánicas",
+    "precio": 700,
+    "stock": "80 bolsas (500g)",
+    "imagen": "https://tse4.mm.bing.net/th/id/OIP.l32OD-Fhmi-izfAIR063xQHaEp?rs=1&pid=ImgDetMain&o=7&rm=3",
+    "descripcion": "Espinacas frescas y nutritivas, ideales para ensaladas y batidos verdes. Cultivadas bajo prácticas orgánicas que garantizan su calidad."
+  },
+  {
+    "id": "VR003",
+    "nombre": "Pimientos Tricolores",
+    "categoria": "Verduras Orgánicas",
+    "precio": 1500,
+    "stock": "120 kilos",
+    "imagen": "https://tse1.mm.bing.net/th/id/OIP.tj2GxjoLiVSrAKhuUrwkSAHaHa?cb=ucfimg2ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "descripcion": "Pimientos rojos, amarillos y verdes, ricos en antioxidantes y vitaminas. Ideales para salteados y platos coloridos."
+  },
+  {
+    "id": "PO001",
+    "nombre": "Miel Orgánica",
+    "categoria": "Productos Orgánicos",
+    "precio": 5000,
+    "stock": "50 frascos (500g)",
+    "imagen": "https://tse1.mm.bing.net/th/id/OIP.ncn2FNiCKuogI-OFllLw4wHaE8?cb=ucfimg2ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "descripcion": "Miel pura y orgánica producida por apicultores locales. Rica en antioxidantes y con un sabor inigualable."
+  },
+  {
+    "id": "PO003",
+    "nombre": "Quinua Orgánica",
+    "categoria": "Productos Orgánicos",
+    "precio": 3500,
+    "stock": "70 paquetes (1kg)",
+    "imagen": "https://th.bing.com/th/id/R.db92873c9b2937564c2019d311573c74?rik=34RSraiNXScDgg&pid=ImgRaw&r=0",
+    "descripcion": "Grano andino de alto valor nutricional, ideal para ensaladas y comidas saludables."
+  },
+  {
+    "id": "PL001",
+    "nombre": "Leche Entera",
+    "categoria": "Productos Lácteos",
+    "precio": 1200,
+    "stock": "90 litros",
+    "imagen": "https://gestionagroganadera.com/wp-content/uploads/2021/02/Leche-entera-2.jpg",
+    "descripcion": "Leche entera fresca proveniente de granjas locales. Rica en calcio y perfecta para toda la familia."
+  }
+]

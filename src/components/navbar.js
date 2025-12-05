@@ -21,6 +21,10 @@ function NavBar() {
               <NavDropdown.Item href="#organicos">Productos Orgánicos</NavDropdown.Item>
               <NavDropdown.Item href="#lacteos">Productos Lácteos</NavDropdown.Item>
             </NavDropdown>
+
+            {/* 👇 NUEVO ENLACE AL ADMIN */}
+            <Nav.Link as={Link} to="/admin">Admin</Nav.Link>
+
           </Nav>
         </Navbar.Collapse>
       </Container>
