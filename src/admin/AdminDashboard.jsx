@@ -7,14 +7,34 @@ export default function AdminDashboard() {
   const [productos, setProductos] = useState([]);
 
   useEffect(() => {
-    axios.get("/api/productos.json").then((res) => {
-      setProductos(res.data);
-    });
+    axios
+      .get("http://localhost:3001/api/productoss")
+      .then((res) => {
+        console.log("DATA API:", res.data);
+
+        // Garantizar que sea un array
+        const data = Array.isArray(res.data)
+          ? res.data
+          : Array.isArray(res.data?.productos)
+          ? res.data.productos
+          : [];
+
+        setProductos(data);
+      })
+      .catch((err) => {
+        console.error("ERROR API:", err);
+        setProductos([]);
+      });
   }, []);
 
-  // Calcular estadísticas
+  // ---- CÁLCULOS ----
   const totalProductos = productos.length;
-  const sumaPrecios = productos.reduce((acc, p) => acc + p.precio, 0);
+
+  const sumaPrecios = productos.reduce(
+    (acc, p) => acc + Number(p.precio || 0),
+    0
+  );
+
   const precioPromedio =
     totalProductos > 0 ? Math.round(sumaPrecios / totalProductos) : 0;
 
@@ -24,7 +44,7 @@ export default function AdminDashboard() {
         <i className="fas fa-boxes mr-2"></i> Gestión de Productos
       </h2>
 
-      {/* 🔷 TARJETAS RESUMEN - DASHBOARD */}
+      {/* TARJETAS */}
       <div className="row mb-4">
 
         <div className="col-lg-3 col-6">
@@ -62,10 +82,9 @@ export default function AdminDashboard() {
             </div>
           </div>
         </div>
-
       </div>
 
-      {/* 🔷 TABLA DE PRODUCTOS */}
+      {/* TABLA */}
       <div className="card">
         <div className="card-body table-responsive">
           <table className="table table-hover">
@@ -85,7 +104,7 @@ export default function AdminDashboard() {
                   <td>{p.id}</td>
                   <td>{p.nombre}</td>
                   <td>{p.categoria}</td>
-                  <td>${p.precio.toLocaleString()}</td>
+                  <td>${Number(p.precio).toLocaleString()}</td>
                   <td>
                     <Link
                       to={`/admin/producto/${p.id}`}
